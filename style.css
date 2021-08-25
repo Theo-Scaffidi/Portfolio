@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 30px;
+    z-index: 5;
+}
+
+.topbar nav {
+    float: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /*background-image: url("img/Banniere-restaurant.jpg");*/
+    background: linear-gradient(#EAEAEA, white);
+    height: 90px;
+    z-index: 4;
+}
+
+.topbar nav a {
+    position: relative;
+    top: 25px;
+    font-size: 23px;
+    padding: 32px 53px 32px 53px;
+    color: #9F9F9F;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.topbar nav a:hover, .topbar nav a.active {
+    color: #000;
+}
+.mailto {
+    position: fixed;
+    margin-left: 85%;
+    z-index: 5;
+}
+.mailto a{
+    text-decoration: none;
+    color: #9F9F9F;
+}
+.mailto a:hover {
+    color: #1B1B1B;
+    text-decoration: underline;
+}
+
+.social {
+    position: fixed;
+    margin-left: 93%;
+    z-index: 5;
+}
+
+.social a {
+    padding: 12px;
+    opacity: 0.5;
+}
+
+.social a:hover {
+    opacity: 1;
+}
+
+.topbar .social {
+    float: right;
+}
+/*Topbar*/
+
+.main {
+    position: relative;
+    margin-top: 150px;
+    margin-left: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 80%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.main a {
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+    .main a:hover {
+        text-decoration: underline;
+    }
+.div_article {
+    position: relative;
+    top: 120px;
+    left: 10%;
+}
+.img_article1 {
+    cursor: pointer;
+    position: relative;
+    top: 90px;
+    width: 26%;
+    height: auto;
+}
+.title_article1 {
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    left: 28%;
+}
+.desc_article1 {
+    cursor: pointer;
+    position: absolute;
+    width: 45%;
+    top: 170px;
+    left: 28%;
+}
+.Article {
+    position: relative;
+    top: 120px;
+}
+.img_Article {
+    position: relative;
+    top: 90px;
+    left: 25%;
+    width: 50%;
+    height: auto;
+}
+.title_Article {
+    position: relative;
+    top: 130px;
+    left: 43%;
+    color: #1B1B1B;
+}
+.desc_Article {
+    position: relative;
+    top: 170px;
+    left: 25%;
+    width: 50%;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1B1B1B;
+}
+.desc_Article2 {
+    position: relative;
+    top: 170px;
+    left: 25%;
+    width: 50%;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1B1B1B;
+    padding-bottom: 200px;
+}
+.div_article2 {
+    position: relative;
+    top: 190px;
+    left: 10%;
+}
+.div_article3 {
+    position: relative;
+    top: 260px;
+    left: 10%;
+}
+.div_article4 {
+    position: relative;
+    top: 330px;
+    left: 10%;
+}
+.div_article5 {
+    position: relative;
+    top: 400px;
+    left: 10%;
+    padding-bottom: 200px;
+}
+.recommandation {
+    position: relative;
+    text-decoration: none;
+    top: 200px;
+    left: 25%;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+    color: #1B1B1B;
+    padding-bottom: 200px;
+}
+.recommandation a{
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 23px;
+    margin-left: 5px;
+    color: #1B1B1B;
+}
+.recommandation a:hover {
+    text-decoration: underline;
+}
+.profil {
+    padding-top: 50px;
+}
+.parcour {
+    padding-bottom: 100px;
+}
+
