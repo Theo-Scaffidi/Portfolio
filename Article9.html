@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Challenge 48h</title>
+        <meta charset="UTRF-8">
+        <meta name="description" content="Challenge 48h" />
+        <meta name="keywords" content="Challenge 48h" />
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body class="body">
+        <header class="topbar">
+            <nav>
+                <a href="index.html">A propos</a>
+                <a href="portfolio.html" class="active">Articles</a>
+            </nav>
+            <div class="mailto">
+                <a HREF="mailto:theo.scaffidi@ynov.com">Me contacter</a>
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/théo-scaffidi-a160611b7" title="Linkedin"><img src="image/Linkedin.png" title="Linkedin"/></a>
+            </div>
+        </header>
+        <div class="Article">
+            <img src="image/Challenge48h21-22.PNG" class="img_Article"/>
+            <h1 class="title_Article">Challenge 48h</h1>
+            <p class="desc_Article">Le challenge 48h de l’année 2021/2022 a eu lieu du 7 février au 8 février 2022. Le thème de ce challenge 48h était que le campus souhaitait améliorer sa digitalisation en ayant un système de gestion des téléviseurs dans le campus pour projeter sur une télévision, ou l’ensemble des télévisions, des flash infos campus, des news plus générale, la météo, des vidéos…<br><br>
+                Les groupes étaient désignés aléatoirement et mélangés les B1, B2, et B3 de différentes spécialités en Informatique. Notre équipe était l’équipe A et était composée de 5 B1, 5 B2, et 8 B3.<br><br>
+                Pour ce challenge, nous avons donc commencé par essayer de trouver des solutions en équipe afin de savoir dans quelle direction partir. Toutes les solutions trouvées s’articulent autour de l’utilisation d’un Raspberry pi branché à l’arrière de l’écran. L’utilisation d'un tel dispositif nous permet d’assurer une connexion à n’importe quel écran ainsi qu’une certaine flexibilité et évolutivité. Le schéma suivant résume le dispositif du point de vue d’un écran.<br><br>
+                <img src="image/raspberry.png" class="img_Article3"/><br><br>
+                Nous avons donc fini avec des solutions qui se valent, chacune avec leurs avantages et leurs inconvénients. La première solution s’appuie sur l’utilisation d’un NAS et une BDD en se trouvant sur le même réseau que les Raspberry pi, le NAS permet ici de stocker les différents médias. Il y aura un routeur installé en entrée du réseau directement relié à un switch connecté en local dans le bâtiment d’Ynov, le switch permettra de connecter tous les téléviseurs sur un même point. Sur le routeur nous installons un serveur WEB, plus précisément un Nginx que nous mettrons en Zone dématérialisé grâce à des règles de firewall, ce qui permet d’augmenter la sécurité de notre réseau.<br><br>
+                <img src="image/reseaux1.png" class="img_Article3"/><br><br>
+                La deuxième solution trouvée était d’utiliser azure, on aura besoin du service media sevices qui va nous permettre d’uploader nos vidéos dans un compte de stockage via une api, les encoder et les envoyer sur une url. Ensuite, il ne reste plus qu’à faire écouter notre lecteur du raspberry sur cette url et notre écran affichera le stream. Dans cette solution, les médias sont stockés dans le cloud, l’utilisation d’un NAS n’est donc pas nécessaire.<br><br>
+                <img src="image/azure.png" class="img_Article3"/><br><br>
+                <img src="image/reseaux2.png" class="img_Article3"/><br><br>
+                Lors de la répartition des tâches, moi ainsi que deux camarades de B2 avions pour objectif de faire une maquette pour le site de gestions. Pour réaliser cette tâche nous avons décidé d’utiliser Figma, car c’est un site qui permet de faire des maquettes et de les prototyper, de plus nous l’avions déjà utilisé lors des cours d’UX Design. Notre site étant destiné à l’usage d’Ynov nous avons donc décidé de reprendre les couleurs présentes sur les sites liés à Ynov afin de rester dans le même thème, et nous avons choisie de faire un design ergonomique afin qu’il soit le plus facile d’utilisation.<br><br>
+                Une fois la maquette terminée moi ainsi que les deux autres camarades avec lesquels j’ai fait la maquette avons fait le PowerPoint qui a servi pour la présentation en mettant tous en commun.</p>
+                <div class="recommandation"><img src="image/pdf.png"/><a href="maquette.pdf" target="_blank">Maquette au format PDF</a></div>
+        </div>
+    </body>
+</html>
